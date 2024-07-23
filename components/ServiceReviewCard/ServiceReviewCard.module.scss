@@ -1,0 +1,32 @@
+@import "../../styles/colors.scss";
+
+.container {
+  width: 100%;
+  aspect-ratio: 603/497;
+  position: relative;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.image_container {
+  width: 97%;
+  aspect-ratio: 583/476;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  border-radius: 4%;
+  border: 2px solid white;
+  z-index: 20;
+}
+
+.underlay {
+  width: 85%;
+  aspect-ratio: 514/458;
+  border-radius: 4%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $teal;
+  z-index: 10;
+}

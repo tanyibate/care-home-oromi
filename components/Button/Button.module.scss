@@ -1,0 +1,30 @@
+@import "../../styles/colors.scss";
+
+.button {
+  all: unset;
+  box-shadow: 0px 8px 23px 0px rgba(212, 182, 124, 0.24);
+  width: 185px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 19.36px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: $yellow;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  border-color: $teal;
+  border-width: 1px;
+  border-style: solid;
+  color: $teal;
+}

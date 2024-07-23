@@ -1,0 +1,11 @@
+.text_container {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  align-items: center;
+
+  .line {
+    border-top: 2px solid;
+    width: 28px;
+  }
+}
