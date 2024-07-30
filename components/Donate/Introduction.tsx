@@ -29,10 +29,15 @@ const Introduction = () => {
                     Why Donations are Important
                   </p>
                   <p className="text-inter md:text-base text-sm text-[#45433E]">
-                    For millions of people, niramayasoul.com is the trusted and
-                    familiar home where they know they’ll find a healing touch.
-                    Our mission is to connect you with everything you need to
-                    take good care of your mind, body, and spirit.
+                    For our care home residents, finding a trusted, supportive
+                    environment is vital for their well-being. Our mission is to
+                    provide compassionate care that nurtures the mind, body, and
+                    spirit of each resident. Donations are essential to
+                    achieving this mission, allowing us to enhance our
+                    facilities, offer enriching activities, and ensure the
+                    highest standard of care. Your contributions help us create
+                    a home where every resident feels valued and supported,
+                    making a significant difference in their daily lives.
                   </p>
                 </div>
               </div>

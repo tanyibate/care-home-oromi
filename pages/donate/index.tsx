@@ -7,15 +7,16 @@ import Thankyou from "@/components/Donate/Thankyou";
 import Testimonials from "@/components/Home/Testimonials";
 
 const Donate = () => {
-    return(<>
-    <Hero />
-    <Introduction />
-    <Improve />
-    <Form />
-    <Impact />
-    <Testimonials />
-    <Thankyou />
-    </>)
-}
+  return (
+    <>
+      <Hero />
+      <Introduction />
+      <Improve />
+      <Form />
+      <Impact />
+      <Thankyou />
+    </>
+  );
+};
 
 export default Donate;

@@ -22,10 +22,9 @@ const Form = () => {
                   Please Fill the Supporter Donation Form
                 </p>
                 <p className="text-inter md:text-base text-sm text-white">
-                  For millions of people, niramayasoul.com is the trusted and
-                  familiar home where they know they’ll find a healing touch.
-                  Our mission is to connect you with everything you need to take
-                  good care of your mind, body, and spirit.
+                  By filling out the supporter donation form, you are
+                  contributing to a cause that makes a significant difference in
+                  their daily lives.
                 </p>
               </div>
             </div>

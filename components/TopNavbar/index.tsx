@@ -75,7 +75,7 @@ const TopNavbar = () => {
           >
             Gallery
           </p>
-          <p
+          {/*<p
             onClick={() => {
               handleMenuItemClicked("testimonials");
               scrollToSection("testimonials");
@@ -83,7 +83,7 @@ const TopNavbar = () => {
             className={`font-inter text-base cursor-pointer ${selectedItem === "testimonials" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
           >
             Testimonials
-          </p>
+          </p>*/}
           <p
             onClick={() => {
               handleMenuItemClicked("contact");

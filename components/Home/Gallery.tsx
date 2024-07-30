@@ -2,6 +2,47 @@
 import React from "react";
 import Image from "next/image";
 
+const ImageCell = ({ imgSrc }: { imgSrc: string }) => {
+  return (
+    <div className="col-span-3">
+      <div className="flex justify-end items-end h-full w-full">
+        <Image
+          src={imgSrc}
+          alt="_gallery"
+          width={306}
+          height={287}
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  );
+};
+
+const MobileImageCell = ({ imgSrc }: { imgSrc: string }) => {
+  return (
+    <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
+      <Image
+        src={imgSrc}
+        alt="_gallery"
+        width={343}
+        height={287}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  );
+};
+
+const images = [
+  "/images/gallery-2.svg",
+  "/images/gallery-2.svg",
+  "/images/gallery-3.svg",
+  "/images/gallery-4.svg",
+  "/images/gallery-5.svg",
+  "/images/gallery-6.svg",
+  "/images/gallery-7.svg",
+  "/images/gallery-8.svg",
+];
+
 const Gallery = () => {
   const containerRef = React.useRef<any>(null);
 
@@ -20,7 +61,10 @@ const Gallery = () => {
   };
   return (
     <>
-      <div className="flex flex-col gap-16 justify-center items-center w-full pb-12 md:pb-32" id='gallery'>
+      <div
+        className="flex flex-col gap-16 justify-center items-center w-full pb-12 md:pb-32"
+        id="gallery"
+      >
         <div className="flex flex-col justify-start items-start gap-4 md:gap-5 px-4 md:px-20 w-full">
           {/* text hr */}
           <div className="relative flex items-center">
@@ -31,15 +75,13 @@ const Gallery = () => {
           </div>
           <div className="flex flex-col justify-start items-start gap-5 md:gap-6 w-full">
             <p className="text-[#1F1C17] font-bold font-inter text-3xl md:text-4xl">
-              Some of Our
-              <span className="text-[#F78A34]">Glimpse</span>
+              Some of Our <span className="text-[#F78A34]">Glimpses</span>
             </p>
             <div className="flex justfy-start md:justify-between items-center gap-4 w-full">
               <p className="text-inter md:text-base text-sm text-[#45433E] lg:max-w-[500px] xl:max-w-[897px]">
-                Lorem Ipsum is therefore always free from repetition, injected
-                humour, or non-characteristic words etc.Lorem Ipsum is therefore
-                always free from repetition, injected humour, or
-                non-characteristic words etc.
+                Discover moments of joy and community in our home. From festive
+                celebrations to daily activities, each snapshot reflects our
+                vibrant, caring atmosphere.
               </p>
               <button className="hidden bg-[#FBB040] shadow-md px-16 py-4 rounded lg:flex justify-center items-center text-white font-inter font-bold text-base">
                 View All
@@ -52,163 +94,16 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-12">
             <div className="col-span-12 grid">
               <div className="grid grid-cols-1 md:grid-cols-12 md:gap-6">
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-2.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-2.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-3.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-4.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                {images.slice(0, 4).map((imgSrc, index) => (
+                  <ImageCell imgSrc={imgSrc} key={index} />
+                ))}
               </div>
             </div>
             <div className="col-span-12 grid mt-6">
               <div className="grid grid-cols-1 md:grid-cols-12 md:gap-6">
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-6.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-6.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-7.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-span-3">
-                  <div className="flex justify-end items-end h-full w-full">
-                    <Image
-                      src="/images/gallery-8.svg"
-                      alt="_gallery"
-                      width={306}
-                      height={287}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full pb-6 pl-6">
-                      <p className="text-white font-bold font-inter text-xl">
-                        Care With Us
-                      </p>
-                      <p className="text-white font-inter text-sm max-w-[251px]">
-                        Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                {images.slice(4, 8).map((imgSrc, index) => (
+                  <ImageCell imgSrc={imgSrc} key={index} />
+                ))}
               </div>
             </div>
           </div>
@@ -219,142 +114,9 @@ const Gallery = () => {
             ref={containerRef}
             className="flex gap-8 justify-start items-center w-full overflow-hidden overflow-x-scroll noScrollBars h-full pb-10 md:pb-12 px-4 md:px-20"
           >
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-1.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-2.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-3.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-4.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-5.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-6.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-7.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-end items-end h-full min-w-[343px] min-h-[287px]">
-              <Image
-                src="/images/gallery-8.svg"
-                alt="_gallery"
-                width={343}
-                height={287}
-                className="w-full h-full object-cover"
-              />
-              <div className="flex flex-col gap-3 justify-start items-start -ml-[100%] w-full h-full pb-6 pl-6">
-                <p className="text-white font-bold font-inter text-xl">
-                  Care With Us
-                </p>
-                <p className="text-white font-inter text-sm max-w-[251px]">
-                  Lorem ipsum dolor sit ametconsectetur. Pretium faucibus{" "}
-                </p>
-              </div>
-            </div>
+            {images.map((imgSrc, index) => (
+              <MobileImageCell imgSrc={imgSrc} key={index} />
+            ))}
           </div>
           <div className="flex w-full justify-center items-center gap-4">
             <Image

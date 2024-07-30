@@ -22,12 +22,14 @@ const Hero = () => {
           </div>
 
           <p className="capitalize md:text-stroke font-bold text-white font-inter max-w-[681px] text-center text-3xl md:text-5xl">
-            ompassionate Care, Every Step of the Way
+            Compassionate Care, Every Step of the Way
           </p>
           <p className="text-white text-center font-inter text-xs md:text-sm max-w-[716px]">
-            Lorem ipsum dolor sit amet consectetur. Volutpat morbi dictum sed
-            turpis mattis id sed. Nunc sed convallis interdum vitae sit
-            suspendisse eget nulla.{" "}
+            Our dedicated team is here to provide exceptional care at every
+            stage. We focus on creating a nurturing environment where every
+            resident feels valued and supported. Whether it's through
+            personalized care plans or engaging activities, we are committed to
+            enhancing the quality of life for all our residents.{" "}
           </p>
           <button className="flex justify-center items-center text-white font-medium font-inter text-base bg-[#FBB040] px-8 py-3 rounded">
             Contact Us

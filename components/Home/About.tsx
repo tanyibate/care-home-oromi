@@ -35,14 +35,15 @@ const About = () => {
                         Compassionate Care
                       </p>
                       <p className="text-inter md:text-base text-sm text-[#45433E]">
-                        Lorem ipsum dolor sit amet consectetur. Tortor egestas
-                        adipiscing aliquam laoreet mattis eleifend proin sed
-                        tellus. Purus volutpat quis gravida proin pretium mi
-                        pellentesque. Venenatis aenean arcu odio vitae elit
-                        viverra orci rutrum. Amet erat faucibus enim
-                        pellentesque pulvinar bibendum. Vitae dui nibh quis
-                        morbi libero convallis neque ultrices. Porttitor risus
-                        volutpat pretium adipiscing{" "}
+                        Our commitment is to provide gentle and compassionate
+                        care, ensuring each resident feels valued and supported.
+                        With personalized care plans, we address individual
+                        needs and preferences, promoting comfort and well-being.
+                        Our skilled team fosters a nurturing environment,
+                        enhancing the quality of life through attentive,
+                        heartfelt service. Every day, we strive to make a
+                        positive impact, creating a warm and welcoming home for
+                        all.{" "}
                       </p>
                     </div>
                   </div>
@@ -87,12 +88,10 @@ const About = () => {
                       />
                     </div>
                     <p className="text-[#45433E] text-sx md:text-base font-inter">
-                      Lorem ipsum dolor sit amet consectetur. Est sed vulputate
-                      odio lacus sit. In lacus euismod eget sed turpis duis.
-                      Adipiscing nisl sit nunc ut turpis volutpat pharetra.
-                      Aliquam aliquet blandit commodo commodo fusce est. Iaculis
-                      a in nec maecenas fermentum. Magna at posuere orci
-                      neque.ulis a in nec m
+                      Caring for the elderly in our community by providing a
+                      comfortable home, community, friendship, companionship,
+                      and respect, thus reducing loneliness and enabling our
+                      elderly to remain relevant in today’s world.
                     </p>
                   </div>
 
@@ -117,12 +116,12 @@ const About = () => {
                       />
                     </div>
                     <p className="text-[#45433E] text-sx md:text-base font-inter">
-                      Lorem ipsum dolor sit amet consectetur. Est sed vulputate
-                      odio lacus sit. In lacus euismod eget sed turpis duis.
-                      Adipiscing nisl sit nunc ut turpis volutpat pharetra.
-                      Aliquam aliquet blandit commodo commodo fusce est. Iaculis
-                      a in nec maecenas fermentum. Magna at posuere orci
-                      neque.ulis a in nec m
+                      Home of Mercy and Peace (Uwa itohan bi ofure) was
+                      officially opened on the 1st of July,2017, in
+                      uromi,Edo-State, Nigeria. It was an initiative of the
+                      Catholic Bishop of Uromi, Most Revd Donatus Ogun. Home of
+                      Mercy and Peace is owned by the Catholic Diocese of Uromi
+                      and managed by the Sisters of St. Louis Nigeria Province.
                     </p>
                   </div>
 

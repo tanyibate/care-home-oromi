@@ -1,5 +1,28 @@
 import Image from "next/image";
 
+const AnchorLink = ({ href, title }: { href: string; title: string }) => {
+  return (
+    <a href={href}>
+      <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
+        {title}
+      </p>
+    </a>
+  );
+};
+
+const quickLinks = [
+  { href: "/", title: "Home" },
+  { href: "/about", title: "About Us" },
+  { href: "/#services", title: "Services" },
+  { href: "/#facilities", title: "Facilities" },
+];
+
+const otherLinks = [
+  { href: "/#gallery", title: "Gallery" },
+  { href: "/#contact", title: "Contact Us" },
+  { href: "/donate", title: "Donate" },
+];
+
 const Footer = () => {
   return (
     <>
@@ -14,11 +37,11 @@ const Footer = () => {
               height={48}
             />
             <div className="flex flex-col gap-5 justify-start items-start">
-              <p className="text-[#7D7B78] text-base font-inter">
+              {/*<p className="text-[#7D7B78] text-base font-inter">
                 Lorem ipsum dolor sit amet consectetur. Ultricies non
                 consectetur ipsum et urna ultricies proin nisi nunc. At sed
                 ultrices in consequat
-              </p>
+              </p>*/}
               <div className="flex justify-start items-center gap-3">
                 <p className="text-white text-sm font-inter font-medium">
                   Follow Us
@@ -61,18 +84,9 @@ const Footer = () => {
                 Quick Links
               </p>
               <div className="flex flex-col justify-start items-start gap-3">
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Home
-                </p>
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  About Us
-                </p>
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Services
-                </p>
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Facilities
-                </p>
+                {quickLinks.map((link, index) => (
+                  <AnchorLink key={index} href={link.href} title={link.title} />
+                ))}
               </div>
             </div>
             <div className="flex flex-col gap-6 justify-start items-start">
@@ -80,18 +94,9 @@ const Footer = () => {
                 Other Links
               </p>
               <div className="flex flex-col justify-start items-start gap-3">
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Gallery
-                </p>
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Testimonials
-                </p>
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Contact Us
-                </p>
-                <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                  Donate
-                </p>
+                {otherLinks.map((link, index) => (
+                  <AnchorLink key={index} href={link.href} title={link.title} />
+                ))}
               </div>
             </div>
             <div className="flex flex-col gap-6 justify-start items-start">
@@ -108,7 +113,7 @@ const Footer = () => {
                     height={20}
                   />
                   <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                    info@willowglenpethospital.com
+                    contactus@homeofmercyandpeaceuromi.org
                   </p>
                 </div>
                 <div className="flex gap-2 justify-start items-start">
@@ -120,7 +125,7 @@ const Footer = () => {
                     height={20}
                   />
                   <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                    669-342-7472
+                    +234 703 452 0508
                   </p>
                 </div>
                 <div className="flex gap-2 justify-start items-start">
@@ -132,7 +137,7 @@ const Footer = () => {
                     height={20}
                   />
                   <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                    1033 Willow Street, San Jose Ca 95125
+                    Catholic Diocese of uromi, Home of Mercy and Peace.
                   </p>
                 </div>
               </div>

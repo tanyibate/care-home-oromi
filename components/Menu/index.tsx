@@ -1,9 +1,10 @@
-'use client';
-import React from "react";
+"use client";
+import React, { use, useMemo } from "react";
 import { useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { on } from "events";
 
 interface MenuProps {
   isOpen: boolean;
@@ -14,8 +15,69 @@ export function Menu({ isOpen, onClose }: MenuProps) {
   const router = useRouter();
   const [selectedItem, setSelectedItem] = React.useState("home");
 
-
   const pathName = router.pathname;
+
+  const MenuLink = ({
+    href,
+    title,
+    name,
+  }: {
+    href: string;
+    title: string;
+    name: string;
+  }) => {
+    return (
+      <Link href={href}>
+        <p
+          onClick={() => {
+            handleMenuItemClicked(name);
+            onClose();
+          }}
+          className={`${selectedItem == name ? "font-bold text-[#008076]" : "text-[#1F1C17]"} cursor-pointer text-base font-inter`}
+        >
+          {title}
+        </p>
+      </Link>
+    );
+  };
+
+  const links = [
+    {
+      href: "/",
+      title: "Home",
+      name: "home",
+    },
+    {
+      href: "/about",
+      title: "About Us",
+      name: "about",
+    },
+    {
+      href: "/#services",
+      title: "Services",
+      name: "services",
+    },
+    {
+      href: "/#facilities",
+      title: "Facilities",
+      name: "facilities",
+    },
+    {
+      href: "/#gallery",
+      title: "Gallery",
+      name: "gallery",
+    },
+    {
+      href: "/#contact",
+      title: "Contact Us",
+      name: "contact",
+    },
+    {
+      href: "/donate",
+      title: "Donate",
+      name: "donate",
+    },
+  ];
 
   useEffect(() => {
     if (isOpen) {
@@ -117,7 +179,7 @@ export function Menu({ isOpen, onClose }: MenuProps) {
         />
       </div> */}
       <div className="flex-col justify-center items-center w-full">
-      <Image
+        <Image
           src="/icons/close-menu.svg"
           alt="logo"
           onClick={onClose}
@@ -126,17 +188,17 @@ export function Menu({ isOpen, onClose }: MenuProps) {
           height={24}
         />
         <div className="flex justify-center items-center border-b border-[#E3E3E2] px-4 w-full py-5">
-            <p className="text-[#1F1C17] text-xl font-inter font-bold">Menu</p>
+          <p className="text-[#1F1C17] text-xl font-inter font-bold">Menu</p>
         </div>
         <div className="w-full flex flex-col gap-8 py-8 px-4 justify-center items-center">
-            <p onClick={() => handleMenuItemClicked("home")} className={`${selectedItem == 'home' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Home</p>
-            <p onClick={() => handleMenuItemClicked("about")} className={`${selectedItem == 'about' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>About Us</p>
-            <p onClick={() => handleMenuItemClicked("services")} className={`${selectedItem == 'services' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Services</p>
-            <p onClick={() => handleMenuItemClicked("facilities")} className={`${selectedItem == 'facilities' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Facilities</p>
-            <p onClick={() => handleMenuItemClicked("gallery")} className={`${selectedItem == 'gallery' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Gallery</p>
-            <p onClick={() => handleMenuItemClicked("testimonials")} className={`${selectedItem == 'testimonials' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Testimonials</p>
-            <p onClick={() => handleMenuItemClicked("contact")} className={`${selectedItem == 'contact' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Contact Us</p>
-            <Link href='/donate'><p onClick={() => handleMenuItemClicked("donate")} className={`${selectedItem == 'donate' ? 'font-bold text-[#008076]': 'text-[#1F1C17]'} cursor-pointer text-base font-inter`}>Donate</p></Link>
+          {links.map((link, index) => (
+            <MenuLink
+              key={index}
+              href={link.href}
+              title={link.title}
+              name={link.name}
+            />
+          ))}
         </div>
       </div>
     </div>

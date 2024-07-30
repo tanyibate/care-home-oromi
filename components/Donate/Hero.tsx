@@ -9,12 +9,12 @@ const Hero = () => {
             <div className="flex flex-col gap-8 justify-start items-start lg:max-w-[595px]">
               <div className="flex flex-col gap-5 md:gap-6 justify-start items-start">
                 <p className="font-inter font-bold text-3xl md:text-5xl text-white leading-[38px] md:leading-[65px]">
-                  Join Our Mission: Donate to Caring With Mercy Today
+                  Join Our Mission: Donate to Help Us Make a Difference
                 </p>
                 <p className="text-white font-inter text-xs md:text-lg">
-                  Lorem ipsum dolor sit amet consectetur. Non praesent mus
-                  vulputate amet accumsan nibh sit eleifend vulputate. Turpis
-                  pretium sed eget a quis in magna tincidunt et.{" "}
+                  Every donation helps enhance our facilities, expand our
+                  programs, and ensure the highest quality of life for those who
+                  call our care home their own.{" "}
                 </p>
               </div>
               <Image

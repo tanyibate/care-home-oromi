@@ -3,7 +3,10 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <>
-      <div className="bg-[#F7F9FB] flex flex-col md:flex-row justify-center items-center px-4 md:px-20 pt-12 pb-24 md:pt-24 md:pb-20" id='contact'>
+      <div
+        className="bg-[#F7F9FB] flex flex-col md:flex-row justify-center items-center px-4 md:px-20 pt-12 pb-24 md:pt-24 md:pb-20"
+        id="contact"
+      >
         <div className="max-w-[354px] md:max-w-[780px]  max-h-[304px] md:max-h-[560px] w-full h-full">
           <iframe
             className="border-8 border-white"
@@ -11,7 +14,7 @@ const Contact = () => {
             height="600"
             frameBorder="0"
             scrolling="no"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Uromi,%20Edo%20State,%20Nigeria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </div>
         <div className="bg-white rounded-lg px-4 md:px-12 py-12 md:pt-20 md:pb-24 flex flex-col gap-10 lg:gap-12 max-w-[316px] md:max-w-[756px] h-fit mt-[170px] md:mt-0 md:-ml-[89px]">
@@ -37,7 +40,7 @@ const Contact = () => {
                   Phone
                 </p>
                 <p className="text-[#7D7B78] text-sm font-inter">
-                  (669) 342-7472
+                  +234 703 452 0508
                 </p>
               </div>
             </div>
@@ -54,7 +57,7 @@ const Contact = () => {
                   Address
                 </p>
                 <p className="text-[#7D7B78] text-sm font-inter">
-                  1033 Willow Street, San Jose, CA, 95125
+                  Catholic Diocese of uromi, Home of Mercy and Peace.
                 </p>
               </div>
             </div>
@@ -71,7 +74,7 @@ const Contact = () => {
                   Email
                 </p>
                 <p className="text-[#7D7B78] text-sm font-inter">
-                  info@willowglenpethospital.com
+                  contactus@homeofmercyandpeaceuromi.org
                 </p>
               </div>
             </div>

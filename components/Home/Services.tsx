@@ -3,7 +3,10 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <div className="grid px-4 md:pb-20 md:px-20 overflow-hidden" id='services'>
+      <div
+        className="grid px-4 md:pb-20 md:px-20 overflow-hidden"
+        id="services"
+      >
         <div className="grid grid-cols-1 md:grid-cols-12 h-fit z-0">
           <div className="col-span-12">
             <div className="flex flex-col xl:flex-row justify-start items-start gap-5">
@@ -23,13 +26,13 @@ const Services = () => {
                 </div>
               </div>
               <p className="text-inter md:text-base text-sm text-[#45433E] md:max-w-[500px] lg:max-w-[800px] xl:max-w-[885px]">
-                Lorem ipsum dolor sit amet consectetur. Dictum id scelerisque
-                sit viverra. Est praesent integer etiam ridiculus aliquam in
-                sed. Egestas viverra ullamcorper viverra aliquet suspendisse
-                risus.Lorem ipsum dolor sit amet consectetur. Dictum id
-                scelerisque sit viverra. Est praesent integer etiam ridiculus
-                aliquam in sed. Egestas viverra ullamcorper viverra aliquet
-                suspendisse risus.
+                We provide a comprehensive range of services tailored to meet
+                the unique needs of our residents. Our offerings include
+                personalized care plans, medical support, engaging recreational
+                activities, nutritious meal options, and comfortable living
+                spaces. Our dedicated staff is committed to ensuring each
+                resident receives the highest level of care and support,
+                fostering a community where everyone can thrive.
               </p>
             </div>
           </div>
@@ -49,10 +52,11 @@ const Services = () => {
                       Assisted Living
                     </p>
                     <p className="text-[#72706C] font-inter text-xs md:text-base">
-                      Lorem ipsum dolor sit amet consectetur. Sed urna
-                      ullamcorper sed viverra nunc augue at commodo. Aenean sed
-                      eu eu massa scelerisque egestas. Justo in nunc sed at
-                      nulla. Purus purus ornare mauris rhoncus lacinia quam.
+                      Our assisted living services provide personalized support
+                      to help residents maintain their independence. We offer
+                      tailored care plans, daily assistance, and a vibrant
+                      community, ensuring comfort and well-being in a nurturing
+                      environment.
                     </p>
                   </div>
                 </div>
@@ -71,10 +75,10 @@ const Services = () => {
                       Memory Care
                     </p>
                     <p className="text-white font-inter text-xs md:text-base">
-                      Lorem ipsum dolor sit amet consectetur. Sed urna
-                      ullamcorper sed viverra nunc augue at commodo. Aenean sed
-                      eu eu massa scelerisque egestas. Justo in nunc sed at
-                      nulla. Purus purus ornare mauris rhoncus lacinia quam.
+                      Our memory care program offers specialized support for
+                      individuals with memory impairments. We focus on creating
+                      a safe, engaging environment with tailored activities and
+                      compassionate care to enhance quality of life.
                     </p>
                   </div>
                 </div>
@@ -93,10 +97,10 @@ const Services = () => {
                       Respite Care
                     </p>
                     <p className="text-[#72706C] font-inter text-xs md:text-base">
-                      Lorem ipsum dolor sit amet consectetur. Sed urna
-                      ullamcorper sed viverra nunc augue at commodo. Aenean sed
-                      eu eu massa scelerisque egestas. Justo in nunc sed at
-                      nulla. Purus purus ornare mauris rhoncus lacinia quam.
+                      Our respite care provides temporary relief for caregivers,
+                      offering short-term stays with comprehensive support.
+                      Residents enjoy a comfortable, safe environment with
+                      personalized care and engaging activities.
                     </p>
                   </div>
                 </div>
