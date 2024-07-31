@@ -35,14 +35,14 @@ const Hero = () => {
               className="md:w-12 md:h-10 w-8 h-6 hidden lg:block absolute"
             />
             <Image
-              src="/images/donate-hero-img.svg"
+              src="/images/donate_hero_image.jpg"
               alt="_bg"
               width={686}
               height={435}
-              className="w-full h-full object-contain 2xl:object-cover hidden lg:block"
+              className="w-full h-full object-cover lg:object-contain 2xl:object-cover hidden lg:block"
             />
             <Image
-              src="/images/donate-hero-img-small-screen.svg"
+              src="/images/donate_hero_image_mobile.png"
               alt="_bg"
               width={686}
               height={435}

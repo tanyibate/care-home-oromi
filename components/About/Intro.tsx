@@ -7,7 +7,7 @@ const Intro = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
           <div className="col-span-12 lg:col-span-6">
             <Image
-              src="/images/about-intro-img.svg"
+              src="/images/about_us_main_image.png"
               alt="_bg"
               width={680}
               height={496}

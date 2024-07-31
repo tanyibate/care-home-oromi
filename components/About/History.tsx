@@ -7,7 +7,7 @@ const History = () => {
         <div className="grid grid-cols-1 lg:gap-20">
           <div className="col-span-12">
             <Image
-              src="/images/history-img.svg"
+              src="/images/group_photo.jpg"
               alt="_bg"
               width={1190}
               height={548}

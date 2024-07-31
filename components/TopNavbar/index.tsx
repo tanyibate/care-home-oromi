@@ -73,7 +73,7 @@ const TopNavbar = () => {
     <>
       <div className="fixed top-0 left-0 w-screen max-w-[100vw] flex justify-between items-center gap-4 px-4 md:px-8 lg:px-8 xl:px-20 py-3 md:py-5 bg-white z-[1000] box-border">
         <Image
-          src="/Logo/logo.svg"
+          src="/Logo/white-logo.svg"
           alt="logo"
           className="w-20 h-8 md:w-32 md:h-12"
           width={132}
@@ -85,10 +85,12 @@ const TopNavbar = () => {
             <MenuLink key={link.name} {...link} />
           ))}
         </div>
+        <a href="/#contact">
+          <button className="hidden lg:flex justify-center items-center text-white font-medium font-inter text-base bg-[#FBB040] shadow-md px-4 xl:px-8 py-3 rounded">
+            Contact Us
+          </button>
+        </a>
 
-        <button className="hidden lg:flex justify-center items-center text-white font-medium font-inter text-base bg-[#FBB040] shadow-md px-4 xl:px-8 py-3 rounded">
-          Contact Us
-        </button>
         <Image
           src={isMenuOpen ? "/icons/close-menu.svg" : "/icons/menu.svg"}
           alt="logo"

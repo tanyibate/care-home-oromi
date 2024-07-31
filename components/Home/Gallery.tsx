@@ -33,14 +33,14 @@ const MobileImageCell = ({ imgSrc }: { imgSrc: string }) => {
 };
 
 const images = [
-  "/images/gallery-2.svg",
-  "/images/gallery-2.svg",
-  "/images/gallery-3.svg",
-  "/images/gallery-4.svg",
-  "/images/gallery-5.svg",
-  "/images/gallery-6.svg",
-  "/images/gallery-7.svg",
-  "/images/gallery-8.svg",
+  "/images/uromi_pic_1.jpeg",
+  "/images/uromi_pic_11.jpeg",
+  "/images/uromi_pic_3.jpeg",
+  "/images/uromi_pic_4.jpeg",
+  "/images/uromi_pic_5.jpeg",
+  "/images/uromi_pic_6.jpeg",
+  "/images/uromi_pic_9.jpeg",
+  "/images/uromi_pic_8.jpeg",
 ];
 
 const Gallery = () => {

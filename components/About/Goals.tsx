@@ -21,8 +21,9 @@ const Goals = () => {
                   Goals & Objectives
                 </p>
                 <p className="text-inter md:text-base text-sm text-[#45433E]">
-                  We share common trends and strategies for improving your
-                  rental income and making sure you stay in high demand.x
+                  We aim to enhance resident well-being, improve care quality,
+                  and create a supportive, thriving community for all our
+                  residents.
                 </p>
               </div>
               <div className="flex flex-col gap-4 justify-start items-start">

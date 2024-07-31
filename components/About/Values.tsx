@@ -134,8 +134,7 @@ const Values = () => {
                   </p>
                   <p className="text-[#6B6D6C] font-inter text-xs md:text-sm">
                     Welcoming residents from diverse backgrounds and ensuring
-                    that care is personalized to meet their unique cultural,
-                    religious, and personal needs.
+                    that care is personalized to meet their unique needs.
                   </p>
                 </div>
               </div>

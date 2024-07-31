@@ -30,7 +30,7 @@ export default function Hero({ image }: { image: string }) {
           quality of life for all our residents.{" "}
         </div>
         <div className={styles.contact_us_button_container}>
-          <Button label="Learn More" />
+          <Button label="Learn More" href="/#about" />
         </div>
         <a href="#about">
           <DownIcon />
