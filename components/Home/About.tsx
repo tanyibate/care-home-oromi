@@ -89,10 +89,11 @@ const About = () => {
                       elderly to remain relevant in today’s world.
                     </p>
                   </div>
-
-                  <p className="cursor-pointer text-[#F78A34] text-base font-bold font-inter">
-                    Read more &#9002;
-                  </p>
+                  <Link href="/about">
+                    <p className="cursor-pointer text-[#F78A34] text-base font-bold font-inter">
+                      Read more &#9002;
+                    </p>
+                  </Link>
                 </div>
               </div>
               <div className="col-span-12 lg:col-span-6 mt-6 lg:mt-0">
@@ -119,10 +120,11 @@ const About = () => {
                       and managed by the Sisters of St. Louis Nigeria Province.
                     </p>
                   </div>
-
-                  <p className="cursor-pointer text-[#F78A34] text-base font-bold font-inter">
-                    Read more &#9002;
-                  </p>
+                  <Link href="/about">
+                    <p className="cursor-pointer text-[#F78A34] text-base font-bold font-inter">
+                      Read more &#9002;
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
