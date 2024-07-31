@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ServiceReviewCard from "../ServiceReviewCard/ServiceReviewCard";
 
 const About = () => {
   return (
@@ -9,13 +10,7 @@ const About = () => {
           <div className="col-span-12 grid">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20 h-fit ">
               <div className="col-span-12 md:col-span-6">
-                <Image
-                  alt="_bg"
-                  src="/images/about-img.svg"
-                  width={633}
-                  height={498}
-                  className="object-cover w-full h-full"
-                />
+                <ServiceReviewCard />
               </div>
               <div className="col-span-12 lg:col-span-6 mt-10 lg:mt-0">
                 <div className="flex flex-col justify-start items-start gap-6 md:gap-10 lg:max-w-[546px]">

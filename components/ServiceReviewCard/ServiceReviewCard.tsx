@@ -10,6 +10,7 @@ export default function ServiceReviewCard() {
       <div className={styles.image_container}>
         <Image
           fill
+          objectFit="cover"
           src={heroImage}
           alt="woman helping man"
           className="rounded"
