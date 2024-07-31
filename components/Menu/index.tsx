@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { on } from "events";
 
 interface MenuProps {
   isOpen: boolean;
@@ -14,8 +13,6 @@ interface MenuProps {
 export function Menu({ isOpen, onClose }: MenuProps) {
   const router = useRouter();
   const [selectedItem, setSelectedItem] = React.useState("home");
-
-  const pathName = router.pathname;
 
   const MenuLink = ({
     href,

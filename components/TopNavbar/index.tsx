@@ -92,7 +92,7 @@ const TopNavbar = () => {
         <Image
           src="/icons/menu.svg"
           alt="logo"
-          onClick={() => setIsMenuOpen(true)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="lg:hidden cursor-pointer"
           width={27}
           height={27}
