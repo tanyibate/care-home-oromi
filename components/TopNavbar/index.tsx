@@ -8,6 +8,20 @@ const TopNavbar = () => {
   const [selectedItem, setSelectedItem] = React.useState("home");
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+  // Check if the current route or section is the same as the selected item
+  React.useEffect(() => {
+    // Get the current route and hash
+    const currentRoute = window.location.pathname;
+    const currentHash = window.location.hash;
+
+    // Combine the pathname and hash to determine the selected item
+    if (currentHash) {
+      setSelectedItem(currentHash.slice(1)); // Remove the '#' from the hash
+    } else {
+      setSelectedItem(currentRoute.slice(1)); // Remove the leading '/' from the pathname
+    }
+  }, []);
+
   const handleMenuItemClicked = (route: string) => {
     setSelectedItem(route);
   };
