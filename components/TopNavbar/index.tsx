@@ -90,7 +90,7 @@ const TopNavbar = () => {
           Contact Us
         </button>
         <Image
-          src="/icons/menu.svg"
+          src={isMenuOpen ? "/icons/close-menu.svg" : "/icons/menu.svg"}
           alt="logo"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="lg:hidden cursor-pointer"
