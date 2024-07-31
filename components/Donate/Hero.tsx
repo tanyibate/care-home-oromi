@@ -3,8 +3,16 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="bg-[url('/images/donate-hero-bg.svg')] bg-cover bg-no-repeat grid w-full py-12 px-4 md:pt-16 md:pb-24 md:px-16">
-        <div className="grid grid-col-1 lg:grid-cols-12 lg:gap-20">
+      <div className="grid w-full py-12 px-4 md:pt-16 md:pb-24 md:px-16 relative">
+        <div className="z-10">
+          <Image
+            objectFit="cover"
+            fill
+            src="/images/donate-hero-bg.svg"
+            alt="_bg"
+          />
+        </div>
+        <div className="grid grid-col-1 lg:grid-cols-12 lg:gap-20 z-50">
           <div className="col-span-12 lg:col-span-6 order-last lg:order-first">
             <div className="flex flex-col gap-8 justify-start items-start lg:max-w-[595px]">
               <div className="flex flex-col gap-5 md:gap-6 justify-start items-start">
