@@ -85,11 +85,11 @@ const TopNavbar = () => {
             <MenuLink key={link.name} {...link} />
           ))}
         </div>
-        <a href="/#contact">
+        <Link href="/#contact">
           <button className="hidden lg:flex justify-center items-center text-white font-medium font-inter text-base bg-[#FBB040] shadow-md px-4 xl:px-8 py-3 rounded">
             Contact Us
           </button>
-        </a>
+        </Link>
 
         <Image
           src={isMenuOpen ? "/icons/close-menu.svg" : "/icons/menu.svg"}
