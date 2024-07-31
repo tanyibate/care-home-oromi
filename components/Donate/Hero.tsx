@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <div className="grid w-full py-12 px-4 md:pt-16 md:pb-24 md:px-16 relative">
-        <div className="z-10">
+        <div className="z-10 bg-[#008076] w-full h-full absolute top-0 left-0">
           <Image
             objectFit="cover"
             fill
