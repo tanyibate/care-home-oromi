@@ -112,9 +112,15 @@ const Footer = () => {
                     width={20}
                     height={20}
                   />
-                  <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                    contactus@homeofmercyandpeaceuromi.org
-                  </p>
+
+                  <a
+                    href="mailto:contactus@homeofmercyandpeaceuromi.org"
+                    className="text-blue-800 text-base font-inter cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Email Us
+                  </a>
                 </div>
                 <div className="flex gap-2 justify-start items-start">
                   <Image

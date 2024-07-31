@@ -23,15 +23,18 @@ export default function Hero({ image }: { image: string }) {
           Compassionate Care, Every Step Of The Way
         </div>
         <div className={styles.description}>
-          Lorem ipsum dolor sit amet consectetur. Volutpat morbi dictum sed
-          turpis mattis id sed. Nunc sed convallis interdum vitae sit
-          suspendisse eget nulla. Habitant tempus lectus eget pretium placerat
-          vulputate.
+          Our dedicated team is here to provide exceptional care at every stage.
+          We focus on creating a nurturing environment where every resident
+          feels valued and supported. Whether it's through personalized care
+          plans or engaging activities, we are committed to enhancing the
+          quality of life for all our residents.{" "}
         </div>
         <div className={styles.contact_us_button_container}>
           <Button label="Learn More" />
         </div>
-        <DownIcon />
+        <a href="#about">
+          <DownIcon />
+        </a>
       </div>
       <div className={styles.overlay}></div>
     </section>

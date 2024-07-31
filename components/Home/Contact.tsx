@@ -26,7 +26,7 @@ const Contact = () => {
               Contact Us
             </p>
           </div>
-          <div className="w-full flex gap-8 md:gap-10 justify-between items-start flex-wrap">
+          <div className="w-full max-w-full flex gap-8 md:gap-10 justify-between items-start flex-wrap text-wrap break-words overflow-hidden">
             <div className="flex gap-4 justify-start items-start">
               <Image
                 src="/icons/phone-2.svg"
@@ -73,9 +73,14 @@ const Contact = () => {
                 <p className="text-[#1F1C17] font-bold text-base md:text-lg font-inter">
                   Email
                 </p>
-                <p className="text-[#7D7B78] text-sm font-inter">
-                  contactus@homeofmercyandpeaceuromi.org
-                </p>
+                <a
+                  href="mailto:contactus@homeofmercyandpeaceuromi.org"
+                  className="text-blue-800 text-base font-inter cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Email Us
+                </a>
               </div>
             </div>
           </div>

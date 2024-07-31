@@ -12,16 +12,66 @@ const TopNavbar = () => {
     setSelectedItem(route);
   };
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const MenuLink = ({
+    href,
+    title,
+    name,
+  }: {
+    href: string;
+    title: string;
+    name: string;
+  }) => {
+    return (
+      <Link href={href}>
+        <p
+          onClick={() => {
+            handleMenuItemClicked(name);
+            setIsMenuOpen(false);
+          }}
+          className={`${selectedItem === name ? "font-bold text-[#008076]" : "text-[#1F1C17]"} cursor-pointer text-base font-inter`}
+        >
+          {title}
+        </p>
+      </Link>
+    );
   };
+
+  const links = [
+    {
+      href: "/",
+      title: "Home",
+      name: "home",
+    },
+    {
+      href: "/about",
+      title: "About Us",
+      name: "about",
+    },
+    {
+      href: "/#services",
+      title: "Services",
+      name: "services",
+    },
+    {
+      href: "/#facilities",
+      title: "Facilities",
+      name: "facilities",
+    },
+    {
+      href: "/#gallery",
+      title: "Gallery",
+      name: "gallery",
+    },
+    {
+      href: "/donate",
+      title: "Donate",
+      name: "donate",
+    },
+  ];
 
   return (
     <>
-      <div className="fixed top-0 w-full flex justify-between items-center gap-4 px-4 md:px-8 lg:px-8 xl:px-20 py-3 md:py-5 bg-white z-[1]">
+      <div className="fixed top-0 left-0 w-screen max-w-[100vw] flex justify-between items-center gap-4 px-4 md:px-8 lg:px-8 xl:px-20 py-3 md:py-5 bg-white z-[1000] box-border">
         <Image
           src="/Logo/logo.svg"
           alt="logo"
@@ -31,76 +81,9 @@ const TopNavbar = () => {
         />
 
         <div className="hidden lg:flex gap-6 justify-center items-center w-fit">
-          <Link href="/">
-            <p
-              onClick={() => handleMenuItemClicked("home")}
-              className={`font-inter text-base cursor-pointer ${selectedItem === "home" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-            >
-              Home
-            </p>
-          </Link>
-          <p
-            onClick={() => {
-              handleMenuItemClicked("about");
-              scrollToSection("about");
-            }}
-            className={`font-inter text-base cursor-pointer ${selectedItem === "about" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-          >
-            About Us
-          </p>
-          <p
-            onClick={() => {
-              handleMenuItemClicked("services");
-              scrollToSection("services");
-            }}
-            className={`font-inter text-base cursor-pointer ${selectedItem === "services" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-          >
-            Services{" "}
-          </p>
-          <p
-            onClick={() => {
-              handleMenuItemClicked("facilities");
-              scrollToSection("facilities");
-            }}
-            className={`font-inter text-base cursor-pointer ${selectedItem === "facilities" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-          >
-            Facilities
-          </p>
-          <p
-            onClick={() => {
-              handleMenuItemClicked("gallery");
-              scrollToSection("galery");
-            }}
-            className={`font-inter text-base cursor-pointer ${selectedItem === "gallery" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-          >
-            Gallery
-          </p>
-          {/*<p
-            onClick={() => {
-              handleMenuItemClicked("testimonials");
-              scrollToSection("testimonials");
-            }}
-            className={`font-inter text-base cursor-pointer ${selectedItem === "testimonials" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-          >
-            Testimonials
-          </p>*/}
-          <p
-            onClick={() => {
-              handleMenuItemClicked("contact");
-              scrollToSection("contact");
-            }}
-            className={`font-inter text-base cursor-pointer ${selectedItem === "contact" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-          >
-            Contact Us
-          </p>
-          <Link href="/donate">
-            <p
-              onClick={() => handleMenuItemClicked("donate")}
-              className={`font-inter text-base cursor-pointer ${selectedItem === "donate" ? "border-b-2 border-[#008076] text-[#008076]" : "text-[#1F1C17]"}`}
-            >
-              Donate
-            </p>
-          </Link>
+          {links.map((link) => (
+            <MenuLink key={link.name} {...link} />
+          ))}
         </div>
 
         <button className="hidden lg:flex justify-center items-center text-white font-medium font-inter text-base bg-[#FBB040] shadow-md px-4 xl:px-8 py-3 rounded">
