@@ -12,7 +12,6 @@ const Donate = () => {
       <Hero />
       <Introduction />
       <Improve />
-      <Form />
       <Impact />
       <Thankyou />
     </>

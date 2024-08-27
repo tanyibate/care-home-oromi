@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../Button/Button";
 
 const Hero = () => {
   return (
@@ -25,12 +26,10 @@ const Hero = () => {
                   call our care home their own.{" "}
                 </p>
               </div>
-              <Image
-                src="/icons/donate-hero-right-arrow.svg"
-                alt="_go"
-                width={144}
-                height={12}
-                className="cursor-pointer"
+              <Button
+                label="Donate Now"
+                href="https://buy.stripe.com/aEU17C1WJ1WW9X2aEE"
+                newTab
               />
             </div>
           </div>

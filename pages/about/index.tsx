@@ -7,15 +7,16 @@ import Journey from "@/components/About/Journey";
 import Values from "@/components/About/Values";
 
 const About = () => {
-    return(<>
-    <Hero />
-    <Intro />
-    <History />
-    <Goals />
-    <Ethos />
-    <Values />
-    <Journey />
-    </>)
-}
+  return (
+    <>
+      <Hero />
+      <Intro />
+      <History />
+      <Goals />
+      <Ethos />
+      <Values />
+    </>
+  );
+};
 
 export default About;

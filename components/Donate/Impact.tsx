@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../Button/Button";
 
 const Impact = () => {
   return (
@@ -15,9 +16,11 @@ const Impact = () => {
                   <p className="text-inter md:text-base text-sm text-[#6B6D6C]">
                     Fueling Progress and Compassion
                   </p>
-                  <button className="bg-[#FBB040] shadow-md text-white max-w-[207px] w-full px-16 py-3 rounded font-inter font-bold text-base">
-                    Donate
-                  </button>
+                  <Button
+                    label="Donate Now"
+                    href="https://buy.stripe.com/aEU17C1WJ1WW9X2aEE"
+                    newTab
+                  />
                 </div>
               </div>
             </div>

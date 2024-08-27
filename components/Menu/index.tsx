@@ -95,7 +95,7 @@ export function Menu({ isOpen, onClose }: MenuProps) {
 
   return (
     <div
-      className={`border-b border-[#E3E3E2] top-0 fixed z-50  right-0 w-full bg-white transform h-full  ${
+      className={`border-b border-[#E3E3E2] top-0 fixed z-[1000]  right-0 w-full bg-white transform h-full  ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out`}
     >
