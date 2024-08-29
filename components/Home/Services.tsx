@@ -37,7 +37,7 @@ const Services = () => {
             </div>
           </div>
           <div className="col-span-12 grid">
-            <div className="grid grid-cols-1 md:grid-cols-12 md:gap-8 h-fit bg-[url('/images/service-bg.svg')] bg-cover md:pt-12">
+            <div className="grid grid-cols-1 md:grid-cols-12 md:gap-8 h-fit bg-[url('/images/service-bg.svg')] bg-cover md:pt-12 pb-16">
               <div className="col-span-12 lg:col-span-4">
                 <div className="flex flex-col justify-start items-start gap-10 md:gap-12 bg-white rounded-2xl border border-[#F3F4FE] px-8 md:px-10 py-8 md:py-10">
                   <Image

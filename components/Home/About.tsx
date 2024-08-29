@@ -97,7 +97,7 @@ const About = () => {
                 </div>
               </div>
               <div className="col-span-12 lg:col-span-6 mt-6 lg:mt-0">
-                <div className="bg-[url('/images/about-pink-cards-bg.svg')] bg-no-repeat rounded-2xl w-full flex flex-col gap-8 justify-start items-start bg-[#FCEDF2] px-5 pb-10 pt-5 md:px-10 md:py-[60px] h-full w-full lg:max-w-[638px]">
+                <div className="bg-[url('/images/about-pink-cards-bg.svg')] bg-no-repeat rounded-2xl flex flex-col gap-8 justify-start items-start bg-[#FCEDF2] px-5 pb-10 pt-5 md:px-10 md:py-[60px] h-full w-full lg:max-w-[638px]">
                   <div className="flex flex-col gap-5 md:gap-6 justify-stat items-start w-full">
                     <div className="w-full flex gap-4 justify-between items-center flex-wrap">
                       <p className="text-[#1F1C17] text-xl md:text-2xl font-bold">

@@ -62,7 +62,7 @@ const Facilities = () => {
   return (
     <>
       <div
-        className="flex flex-col gap-10 md:gap-16 justify-center items-center w-full pt-12 md:pt-32 pb-12 lg:pb-32"
+        className="flex flex-col gap-10 md:gap-16 justify-center items-center w-full pt-12 pb-12"
         id="facilities"
       >
         <div className="flex flex-col gap-4 md:gap-8 justify-center items-center w-full">
@@ -107,7 +107,7 @@ const Facilities = () => {
               />
             ))}
           </div>
-          <div className="flex w-full justify-center items-center gap-4">
+          <div className="flex w-full justify-center items-center gap-4 py-4">
             <Image
               src="/icons/left-arrow.svg"
               onClick={scrollLeft}

@@ -62,7 +62,7 @@ const Gallery = () => {
   return (
     <>
       <div
-        className="flex flex-col gap-16 justify-center items-center w-full pb-12 md:pb-32"
+        className="flex flex-col gap-8 md:gap-16 justify-center items-center w-full pb-12 md:pb-32"
         id="gallery"
       >
         <div className="flex flex-col justify-start items-start gap-4 md:gap-5 px-4 md:px-20 w-full">
