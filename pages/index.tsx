@@ -16,7 +16,6 @@ export default function Home() {
       <Hero image="/hero-image.jpg" />
       <About />
       <Services />
-      <Facilities />
       <Gallery />
       <Contact />
     </>

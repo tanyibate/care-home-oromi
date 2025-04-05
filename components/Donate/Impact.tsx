@@ -16,11 +16,57 @@ const Impact = () => {
                   <p className="text-inter md:text-base text-sm text-[#6B6D6C]">
                     Fueling Progress and Compassion
                   </p>
-                  <Button
-                    label="Donate Now"
-                    href="https://buy.stripe.com/aEU17C1WJ1WW9X2aEE"
-                    newTab
-                  />
+                  <div className="space-y-8 w-full">
+                    <div className="space-y-4">
+                      <h3 className="text-[#000401] font-semibold text-xl">
+                        Donate via Stripe
+                      </h3>
+                      <Button
+                        label="Donate Now"
+                        href="https://buy.stripe.com/aEU17C1WJ1WW9X2aEE"
+                        newTab
+                      />
+                    </div>
+
+                    <div className="space-y-4 pb-12">
+                      <h3 className="text-[#000401] font-semibold text-xl">
+                        Direct Bank Transfer
+                      </h3>
+                      <div className="bg-gray-50 p-4 pb-6 rounded-lg space-y-2">
+                        <p className="text-sm font-medium">
+                          Bank Name:{" "}
+                          <span className="font-normal">Fidelity Bank Plc</span>
+                        </p>
+                        <p className="text-sm font-medium">
+                          Branch: <span className="font-normal">Uromi</span>
+                        </p>
+                        <p className="text-sm font-medium">
+                          Account Name:{" "}
+                          <span className="font-normal">
+                            Catholic Diocese of Uromi
+                          </span>
+                        </p>
+                        <p className="text-sm font-medium">
+                          Account Number:{" "}
+                          <span className="font-normal">5090298949</span>
+                        </p>
+                        <p className="text-sm font-medium">
+                          Swift Code:{" "}
+                          <span className="font-normal">FIDTNGLA</span>
+                        </p>
+                        <p className="text-sm font-medium">
+                          Currency: <span className="font-normal">USD</span>
+                        </p>
+                        <p className="text-sm font-medium">
+                          Address:{" "}
+                          <span className="font-normal">
+                            23 Mission Road, Opposite Uromi Central Market,
+                            Uromi
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
