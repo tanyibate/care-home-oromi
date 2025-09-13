@@ -114,7 +114,7 @@ const Footer = () => {
                   />
 
                   <a
-                    href="mailto:contactus@homeofmercyandpeaceuromi.org"
+                    href="mailto:homeofmercyandpeace@gmail.com"
                     className="text-blue-800 text-base font-inter cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -131,7 +131,7 @@ const Footer = () => {
                     height={20}
                   />
                   <p className="text-[#7D7B78] text-base font-inter cursor-pointer">
-                    +234 703 452 0508
+                    +234 806 718 2783
                   </p>
                 </div>
                 <div className="flex gap-2 justify-start items-start">

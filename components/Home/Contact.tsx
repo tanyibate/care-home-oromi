@@ -40,7 +40,7 @@ const Contact = () => {
                   Phone
                 </p>
                 <p className="text-[#7D7B78] text-sm font-inter">
-                  +234 703 452 0508
+                  +234 806 718 2783 or +234 814 570 6739
                 </p>
               </div>
             </div>
